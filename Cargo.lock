@@ -6,6 +6,7 @@ version = "0.10.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3c0ff24a73b51d9009c40897faf87d31b77345c90ffbf4dc3a1d2957032c5653"
 dependencies = [
+ "diffus-derive",
  "itertools",
 ]
 
@@ -49,7 +50,6 @@ name = "project-diffus"
 version = "0.1.0"
 dependencies = [
  "diffus",
- "diffus-derive",
 ]
 
 [[package]]

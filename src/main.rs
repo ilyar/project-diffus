@@ -1,5 +1,6 @@
-use diffus::{edit, Diffable};
-use diffus_derive::Diffus;
+use diffus::edit;
+use diffus::Diffable;
+use diffus::Diffus;
 
 #[derive(Diffus)]
 struct Point {
