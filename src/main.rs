@@ -14,14 +14,14 @@ fn main() {
     let diff = left_point.diff(&right_point);
 
     match diff {
-        edit::Edit::Copy => println!("point: no difference"),
+        edit::Edit::Copy(_) => println!("point: no difference"),
         edit::Edit::Change(EditedPoint { x, y }) => {
             match x {
-                edit::Edit::Copy => println!("x: no difference"),
+                edit::Edit::Copy(_) => println!("x: no difference"),
                 edit::Edit::Change((left_x, right_x)) => println!("x: {} => {}", left_x, right_x),
             }
             match y {
-                edit::Edit::Copy => println!("y: no difference"),
+                edit::Edit::Copy(_) => println!("y: no difference"),
                 edit::Edit::Change((left_y, right_y)) => println!("y: {} => {}", left_y, right_y),
             }
         }
